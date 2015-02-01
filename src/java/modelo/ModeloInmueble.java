@@ -11,9 +11,6 @@ public class ModeloInmueble {
     public ModeloInmueble(){
     }
     
-    public void cerrarSesion(){
-    }
-    
     public static List<Inmueble> get() {
         Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
