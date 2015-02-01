@@ -134,11 +134,9 @@ public class Controlador extends HttpServlet {
     }
 
     private void borrarFotos(String id) {
-        //String directorio = getServletContext().getRealPath("/") + "subido/" + id + "/";
         String directorio = getServletContext().getRealPath("")+File.separator+ "subido"+File.separator+ id + File.separator;
        
         File f = new File(directorio);
-        System.out.println(f.exists()+"********************************************"+f.getAbsolutePath());
         if (f.exists()) {
     
             File[] ficheros = f.listFiles();
