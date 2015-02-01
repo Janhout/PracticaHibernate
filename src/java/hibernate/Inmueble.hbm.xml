@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28-ene-2015 17:06:21 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Inmueble" table="inmueble" catalog="inmobiliaria" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="calle" type="string">
+            <column name="calle" length="50" not-null="true" />
+        </property>
+        <property name="numero" type="string">
+            <column name="numero" length="20" not-null="true" />
+        </property>
+        <property name="localidad" type="string">
+            <column name="localidad" length="50" not-null="true" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="25" not-null="true" />
+        </property>
+        <property name="precio" type="int">
+            <column name="precio" not-null="true" />
+        </property>
+        <property name="usuario" type="string">
+            <column name="usuario" length="30" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
