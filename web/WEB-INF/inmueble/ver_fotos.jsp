@@ -16,7 +16,7 @@
         }
     }
     if(fotos.size()==0){
-        fotos.add("faces/resources/images/nohay.jpg");
+        fotos.add("resources/images/nohay.jpg");
     }
 %>
 <!DOCTYPE html>
